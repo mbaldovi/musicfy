@@ -1,0 +1,110 @@
+@import '../../../scss/index.scss';
+
+.login-form{
+    margin-top: 50px;
+
+    h1{
+        color: $color-text-white;
+        text-align: center;
+        font-size: 35px;
+        padding-bottom: 20px;
+    }
+
+    .ui.form{
+        .field{
+            .input{
+                margin-bottom: 5px;
+
+                input{
+                    background-color: $background-grey;
+                    border: 0;
+                    font-size: 16px;
+                    color: $color-text-white;
+
+                    &:hover,
+                    &:active,
+                    &:focus{
+                        background-color: $background-grey-hover;
+                        border: 0;
+                    }
+                }
+
+                i{
+                    color: $color-text-white;
+                    font-size: 19px;
+                }
+
+                &.error{
+                    input{
+                        border-bottom: 1px solid $danger;
+                    }
+                }
+            }
+        }
+
+        .button{
+            width: 100%;
+            background-color: $primary-color;
+            color: $color-text-white;
+            text-transform: uppercase;
+            margin-top: 10px;
+            border-radius: 50px;
+            padding: 17px 0;
+            font-size: 14px;
+            letter-spacing: 3px;
+        }
+
+        .error-text{
+            color: $color-text-white;
+            padding-left: 15px;
+        }
+    }
+
+    .resend-verification-email{
+        color: $color-text-white;
+        padding: 20px 20px 0 20px;
+        text-align: center;
+
+        span{
+            color: $primary-color;
+            font-weight: bold;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__options{
+        margin-top: 50px;
+        color: $color-text-white;
+        text-align: center;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        p{
+            &:first-of-type{
+                margin-bottom: 40px;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            &:last-of-type{
+                color: $color-text-grey;
+
+                span{
+                    color: $color-text-white;
+                    margin-left: 5px;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
